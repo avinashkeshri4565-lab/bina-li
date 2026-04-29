@@ -1,0 +1,8 @@
+{
+  "name": "BINA CENTRAL LIBRARY",
+  "description": "Premium 24x7 self-study library in Bettiah, Bihar, featuring high-speed WiFi, AC environment, and study resources.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}
