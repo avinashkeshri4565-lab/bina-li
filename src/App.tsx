@@ -200,12 +200,12 @@ const Hero = ({ lang }: { lang: Language }) => {
           animate={{ scale: 1 }}
           transition={{ duration: 10, repeat: Infinity, repeatType: "reverse", ease: "linear" }}
           src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=2070" 
-          className="w-full h-full object-cover opacity-40" 
+          className="w-full h-full object-cover opacity-30" 
           alt="Library Background" 
         />
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-black/20" />
+        <div className="absolute inset-0 bg-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-black/40" />
       </motion.div>
       
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 w-full">
@@ -214,7 +214,7 @@ const Hero = ({ lang }: { lang: Language }) => {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="lg:col-span-8"
+            className="lg:col-span-10"
           >
             <motion.div
                variants={itemVariants}
@@ -226,18 +226,17 @@ const Hero = ({ lang }: { lang: Language }) => {
               </span>
               {t.badge}
             </motion.div>
-
             {/* Structured Hierarchy */}
             <div className="space-y-6">
               {/* 1. Main Heading (English) */}
-              <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-none tracking-tighter">
-                BINA CENTRAL <span className="text-royal drop-shadow-[0_0_15px_rgba(11,77,255,0.4)]">LIBRARY</span>
+              <motion.h1 variants={itemVariants} className="text-6xl md:text-8xl lg:text-[9rem] font-black text-white leading-[0.9] tracking-tighter">
+                BINA CENTRAL <span className="text-[#FFD700] drop-shadow-[0_0_20px_rgba(255,215,0,0.5)]">LIBRARY</span>
               </motion.h1>
               
               {/* 2. Sub Heading (Hindi) */}
               <motion.h2 
                 variants={itemVariants}
-                className="text-3xl md:text-5xl font-black text-deep/90 tracking-tight brightness-110"
+                className="text-4xl md:text-6xl font-black text-deep/90 tracking-tight brightness-125"
               >
                 बिना सेंट्रल लाइब्रेरी
               </motion.h2>
